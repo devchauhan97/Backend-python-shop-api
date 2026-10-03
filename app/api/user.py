@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from app.config.database import get_db
 from fastapi import Depends,APIRouter,requests
 from sqlalchemy.orm import Session
-import user
+import app.models.user as user
 
 router = APIRouter()
 

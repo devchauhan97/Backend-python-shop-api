@@ -55,7 +55,7 @@ def verify_password(plain_password, hashed_password):
 
 async def verify_token_middleware(request: Request, call_next):
 
-    public_paths = ["/api/auth/login", "/api/login", "/docs", "/openapi.json"]
+    public_paths = ["/api/auth/login", "/api/login","/api/health", "/docs", "/openapi.json"]
 
     if request.url.path in public_paths:
         return await call_next(request)

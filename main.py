@@ -14,6 +14,7 @@ origins = [
     "http://localhost:3000", # Default React port
     "http://localhost:5173", # Default Vite + React port
     "http://localhost:4200", # Default Vite + React port
+    "https://main.d11godj15jvc0p.amplifyapp.com"
 ]
 
 app.add_middleware(

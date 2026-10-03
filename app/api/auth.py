@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from app.utils.auth import verify_password, create_access_token
 from app.config.database import get_db
 import app.models.models as models
-import user
+import app.models.user as user
 
 router = APIRouter()
  
